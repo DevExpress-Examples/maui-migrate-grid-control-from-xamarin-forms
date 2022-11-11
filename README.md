@@ -21,20 +21,13 @@ Refer to the following Microsoft topic for more information on how to update the
 
 ## Step 2: Update the Framework and DevExpress Controls NuGet References
 
-To reference .NET MAUI Framework and Controls instead of the Xamarin.Forms, replicate the changes made in the following files:
-
-* [MainPage.xaml.cs](
-https://github.com/DevExpress-Examples/maui-migrate-grid-control-from-xamarin-forms/pull/1/files#diff-6eac6ac4461489f83db3a88bb5d9c2b916cddb8a933bd285d9704b555e5d4375L1)
-    ```diff
-    - using Xamarin.Forms;
-    ```
-* [maui_grid_get_started_migrated.csproj](https://github.com/DevExpress-Examples/maui-migrate-grid-control-from-xamarin-forms/pull/1/files#diff-0c0026324b1c4e828e8afa24df6ccf414fd9f1c2d2ed7c39f276e8973f510217R37) 
-    ```diff
-    + <ItemGroup>
-    +   <PackageReference Include="DevExpress.Maui.DataGrid" Version="22.2.*" />
-    +   <PackageReference Include="DevExpress.Data" Version="22.2.*" />
-    + </ItemGroup>
-    ```
+To reference .NET MAUI Framework and Controls instead of the Xamarin.Forms, replicate the changes made [maui_grid_get_started_migrated.csproj](https://github.com/DevExpress-Examples/maui-migrate-grid-control-from-xamarin-forms/pull/1/files#diff-0c0026324b1c4e828e8afa24df6ccf414fd9f1c2d2ed7c39f276e8973f510217R37) file:
+```diff
++ <ItemGroup>
++   <PackageReference Include="DevExpress.Maui.DataGrid" Version="22.2.*" />
++   <PackageReference Include="DevExpress.Data" Version="22.2.*" />
++ </ItemGroup>
+```
 
 ## Step 3: Source Code Updates
 
