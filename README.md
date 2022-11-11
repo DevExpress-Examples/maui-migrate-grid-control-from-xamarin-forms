@@ -111,7 +111,7 @@ In the `DataGrid_GettingStarted.Android` project, we removed all the folders tha
 
 The following figure illustrates the .NET MAUI solution file hierarchy:
 
-![image](https://user-images.githubusercontent.com/12169834/201390308-12994bce-0047-425d-ac33-4543b019adac.png)
+![image](https://user-images.githubusercontent.com/12169834/201390885-ca3941db-e1db-4af0-959e-0cb3b5390d81.png)
 
 
 ## Files to Review
