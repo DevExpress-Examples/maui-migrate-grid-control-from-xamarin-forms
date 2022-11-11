@@ -2,7 +2,7 @@
 [![](https://img.shields.io/badge/Open_in_DevExpress_Support_Center-FF7200?style=flat-square&logo=DevExpress&logoColor=white)](https://supportcenter.devexpress.com/ticket/details/T1127033)
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 <!-- default badges end -->
-# Migrate Xamarin.Forms Application to MAUI
+# Migrate a Xamarin.Forms Application to .NET MAUI
 
 This repository illustrates how to migrate the [DevExpress Xamarin.Forms DataGrid Get Started application](https://github.com/DevExpress-Examples/xamarin-forms-data-grid-examples/tree/22.1.3%2B/CS/GettingStarted) to DevExpress .NET MAUI Controls. Refer to the [opened pull request](https://github.com/DevExpress-Examples/maui-migrate-grid-control-from-xamarin-forms/pull/1/) to see the changes that are we made to migrate the application to .NET MAUI platform.
 
