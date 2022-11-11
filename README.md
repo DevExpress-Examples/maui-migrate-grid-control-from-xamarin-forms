@@ -106,6 +106,14 @@ In this sample, we moved files from the [DataGrid_GettingStarted.Android](https:
 
 In the `DataGrid_GettingStarted.Android` project, we removed all the folders that start with `mipmap`. You can also remove the [Assets.xassets](DataGrid_GettingStarted.iOS/Assets.xcassets/AppIcon.appiconset/Contents.json) folder from the `DataGrid_GettingStarted.iOS` project. Xamarin.Forms projects required these folders, but the .NET MAUI project does not: the .NET MAUI resizes these images automatically.
 
+
+## The Result Application Structure 
+
+The following figure illustrates the .NET MAUI solution file hierarchy:
+
+![image](https://user-images.githubusercontent.com/12169834/201389074-9a91552d-8ff6-4b0a-b682-dde44801a545.png)
+
+
 ## Files to Review
 
 - [Project File](https://github.com/DevExpress-Examples/maui-migrate-grid-control-from-xamarin-forms/pull/1/files#diff-0c0026324b1c4e828e8afa24df6ccf414fd9f1c2d2ed7c39f276e8973f510217)
