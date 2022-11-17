@@ -126,3 +126,16 @@ The following figure illustrates the .NET MAUI solution file hierarchy:
 - [DevExpress Documentation: Migration from Xamarin.Forms to .NET MAUI](https://docs.devexpress.com/MAUI/403988/)
 - [DotNet MAUI Repository: Migrating from Xamarin.Forms (Preview)](https://github.com/dotnet/maui/wiki/Migrating-from-Xamarin.Forms-(Preview))
 - [DotNet MAUI Repository: Porting Custom Renderers to Handlers](https://github.com/dotnet/maui/wiki/Porting-Custom-Renderers-to-Handlers)
+
+## More Examples
+* [Stocks App](https://github.com/DevExpress-Examples/maui-stocks-mini)
+* [Data Grid](https://github.com/DevExpress-Examples/maui-data-grid-get-started)
+* [Data Form](https://github.com/DevExpress-Examples/maui-data-form-get-started)
+* [Charts](https://github.com/DevExpress-Examples/maui-charts)
+* [Scheduler](https://github.com/DevExpress-Examples/maui-scheduler-get-started)
+* [Tab Page](https://github.com/DevExpress-Examples/maui-tab-page-get-started)
+* [Tab View](https://github.com/DevExpress-Examples/maui-tab-view-get-started)
+* [Drawer Page](https://github.com/DevExpress-Examples/maui-drawer-page-get-started)
+* [Drawer View](https://github.com/DevExpress-Examples/maui-drawer-view-get-started)
+* [Collection View](https://github.com/DevExpress-Examples/maui-collection-view-get-started)
+* [Popup](https://github.com/DevExpress-Examples/maui-popup-get-started)
