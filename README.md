@@ -4,9 +4,9 @@
 <!-- default badges end -->
 # Migrate a Xamarin.Forms Application to .NET MAUI
 
-This repository illustrates how to migrate the [DevExpress Xamarin.Forms DataGrid Get Started application](https://github.com/DevExpress-Examples/xamarin-forms-data-grid-examples/tree/22.1.3%2B/CS/GettingStarted) to DevExpress .NET MAUI Controls. Refer to the [open pull request](https://github.com/DevExpress-Examples/maui-migrate-grid-control-from-xamarin-forms/pull/1/) to see the changes that we made to migrate the application to the .NET MAUI platform.
+This repository illustrates how to migrate the [DevExpress Xamarin.Forms DataGrid Get Started application](https://github.com/DevExpress-Examples/xamarin-forms-data-grid-examples/tree/22.1.3%2B/CS/GettingStarted) to .NET MAUI. Refer to the [open pull request](https://github.com/DevExpress-Examples/maui-migrate-grid-control-from-xamarin-forms/pull/1/) to view changes made during the migration.
 
-To migrate a Xamarin.Forms application to .NET MAUI, you should perform the following steps:
+To migrate a Xamarin.Forms application to .NET MAUI, you must:
 
 * Convert the projects from .NET Framework to .NET SDK Style
 * Update NuGet packages
@@ -15,9 +15,9 @@ To migrate a Xamarin.Forms application to .NET MAUI, you should perform the foll
 
 ## Step 1: Update the .csproj Files
 
-The [maui_grid_get_started_migrated.csproj](https://github.com/DevExpress-Examples/maui-migrate-grid-control-from-xamarin-forms/pull/1/files#diff-0c0026324b1c4e828e8afa24df6ccf414fd9f1c2d2ed7c39f276e8973f510217) file includes the content of the .NET MAUI project that is migrated from the Xamarin.Forms.
+The [maui_grid_get_started_migrated.csproj](https://github.com/DevExpress-Examples/maui-migrate-grid-control-from-xamarin-forms/pull/1/files#diff-0c0026324b1c4e828e8afa24df6ccf414fd9f1c2d2ed7c39f276e8973f510217) file includes the contents of our .NET MAUI project (migrated from its Xamarin.Forms counterpart).
 
-Refer to the following Microsoft topic for more information on how to update the csproj files: [Migrating from Xamarin.Forms - csproj files updates](https://github.com/dotnet/maui/wiki/Migrating-from-Xamarin.Forms-(Preview)#step-1--csproj-files-updates).
+Refer to the following Microsoft topic for more information on how to update the project files: [Migrating from Xamarin.Forms - csproj files updates](https://github.com/dotnet/maui/wiki/Migrating-from-Xamarin.Forms-(Preview)#step-1--csproj-files-updates).
 
 ## Step 2: Update the Framework and DevExpress Controls NuGet References
 
@@ -34,7 +34,7 @@ To reference the .NET MAUI Framework and Controls instead of the Xamarin.Forms, 
 ### Step 3.1: Update the Framework and DevExpress Control Namespaces
 
 The [MainPage.xaml](
-https://github.com/DevExpress-Examples/maui-migrate-grid-control-from-xamarin-forms/pull/1/files#diff-46feb52f587f3e1f6faaf4f23c928c93a67eccb05ddc2000db6303dc3f10ff62R2) file contains changes you should perform to migrate a project to .NET MAUI: 
+https://github.com/DevExpress-Examples/maui-migrate-grid-control-from-xamarin-forms/pull/1/files#diff-46feb52f587f3e1f6faaf4f23c928c93a67eccb05ddc2000db6303dc3f10ff62R2) file contains changes necessary for the migration to .NET MAUI:
 
   ```diff
   - xmlns="http://xamarin.com/schemas/2014/forms"
@@ -79,7 +79,7 @@ You should also update the code-behind references in the [MainPage.xaml.cs](http
 
 ### Step 3.3: Update Source Code to Address Breaking API Changes
 
-In the [MainPage.xaml.cs](https://github.com/DevExpress-Examples/maui-migrate-grid-control-from-xamarin-forms/pull/1/files#diff-6eac6ac4461489f83db3a88bb5d9c2b916cddb8a933bd285d9704b555e5d4375L16) file, you need to replace the outdated [CustomSummaryProcess](https://docs.devexpress.com/MobileControls/DevExpress.XamarinForms.DataGrid.CustomSummaryProcess) class with [DataSummaryProcess](http://docs.devexpress.com/MAUI/DevExpress.Maui.Core.DataSummaryProcess?v=22.2) because of the [T1120574 - DataGridView and DXCollectionView - API Changes](https://supportcenter.devexpress.com/ticket/details/t1120574/datagridview-and-dxcollectionview-api-changes) breaking API change:
+In the [MainPage.xaml.cs](https://github.com/DevExpress-Examples/maui-migrate-grid-control-from-xamarin-forms/pull/1/files#diff-6eac6ac4461489f83db3a88bb5d9c2b916cddb8a933bd285d9704b555e5d4375L16) we replaced the outdated [CustomSummaryProcess](https://docs.devexpress.com/MobileControls/DevExpress.XamarinForms.DataGrid.CustomSummaryProcess) class with [DataSummaryProcess](http://docs.devexpress.com/MAUI/DevExpress.Maui.Core.DataSummaryProcess?v=22.2) (see [T1120574 - DataGridView and DXCollectionView - API Changes](https://supportcenter.devexpress.com/ticket/details/t1120574/datagridview-and-dxcollectionview-api-changes) for more information):
 
 ```diff
 - void grid_CalculateCustomSummary(System.Object sender, DevExpress.XamarinForms.DataGrid.CustomSummaryEventArgs e) {
@@ -102,9 +102,9 @@ In the [MainPage.xaml.cs](https://github.com/DevExpress-Examples/maui-migrate-gr
 
 ### Step 3.4: Move Platform Files to the Platform Folder
 
-In this sample, we moved files from the [DataGrid_GettingStarted.Android](https://github.com/DevExpress-Examples/maui-migrate-grid-control-from-xamarin-forms/pull/1/files#diff-9c065e2f5966c1245f991ee784b6c3a8d676f7a4e4dc86ad6a768471f70d7c7e) and [DataGrid_GettingStarted.iOS](https://github.com/DevExpress-Examples/maui-migrate-grid-control-from-xamarin-forms/pull/1/files#diff-d615ba770b91dcd91eaade572f528297c0edb57fda54751acb7f787b4843e3d6) projects to the [Platforms/Android](https://github.com/DevExpress-Examples/maui-migrate-grid-control-from-xamarin-forms/pull/1/files#diff-fa67dbba651771c09d6053ac3d21e72d3127ac09ee6cf5a95dcb5b343ef72cd4) and [Platforms/iOS](https://github.com/DevExpress-Examples/maui-migrate-grid-control-from-xamarin-forms/pull/1/files#diff-8c2596fb4226998e047eddd92d1b8948ceb590bc4a632a54fec5dccebad5faf3) folders in the new project, respectively. 
+In this sample, we moved files from our [DataGrid_GettingStarted.Android](https://github.com/DevExpress-Examples/maui-migrate-grid-control-from-xamarin-forms/pull/1/files#diff-9c065e2f5966c1245f991ee784b6c3a8d676f7a4e4dc86ad6a768471f70d7c7e) and [DataGrid_GettingStarted.iOS](https://github.com/DevExpress-Examples/maui-migrate-grid-control-from-xamarin-forms/pull/1/files#diff-d615ba770b91dcd91eaade572f528297c0edb57fda54751acb7f787b4843e3d6) projects to the [Platforms/Android](https://github.com/DevExpress-Examples/maui-migrate-grid-control-from-xamarin-forms/pull/1/files#diff-fa67dbba651771c09d6053ac3d21e72d3127ac09ee6cf5a95dcb5b343ef72cd4) and [Platforms/iOS](https://github.com/DevExpress-Examples/maui-migrate-grid-control-from-xamarin-forms/pull/1/files#diff-8c2596fb4226998e047eddd92d1b8948ceb590bc4a632a54fec5dccebad5faf3) folders in the new project, respectively. 
 
-In the `DataGrid_GettingStarted.Android` project, we removed all the folders that start with `mipmap`. You can also remove the [Assets.xassets](DataGrid_GettingStarted.iOS/Assets.xcassets/AppIcon.appiconset/Contents.json) folder from the `DataGrid_GettingStarted.iOS` project. Xamarin.Forms projects required these folders, but the .NET MAUI project does not: .NET MAUI resizes these images automatically.
+In the `DataGrid_GettingStarted.Android` project, we removed all the folders that start with `mipmap`. You can also remove the [Assets.xassets](DataGrid_GettingStarted.iOS/Assets.xcassets/AppIcon.appiconset/Contents.json) folder from the `DataGrid_GettingStarted.iOS` project. Xamarin.Forms projects required these folders, but our .NET MAUI project does not: .NET MAUI resizes these images automatically.
 
 
 ## The Result Application Structure 
