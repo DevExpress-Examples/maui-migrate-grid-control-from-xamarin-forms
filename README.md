@@ -17,7 +17,7 @@ To migrate a Xamarin.Forms application to .NET MAUI, you must:
 
 The [maui_grid_get_started_migrated.csproj](https://github.com/DevExpress-Examples/maui-migrate-grid-control-from-xamarin-forms/pull/1/files#diff-0c0026324b1c4e828e8afa24df6ccf414fd9f1c2d2ed7c39f276e8973f510217) file includes the contents of our .NET MAUI project (migrated from its Xamarin.Forms counterpart).
 
-Refer to the following Microsoft topic for more information on how to update the project files: [Migrating from Xamarin.Forms - csproj files updates](https://github.com/dotnet/maui/wiki/Migrating-from-Xamarin.Forms-(Preview)#step-1--csproj-files-updates).
+Refer to the following Microsoft topic for more information on how to update the project files: [Migrating from Xamarin.Forms - Create a New Project](https://learn.microsoft.com/en-us/dotnet/maui/migration/forms-projects?view=net-maui-7.0#create-a-new-project).
 
 ## Step 2: Update the Framework and DevExpress Controls NuGet References
 
@@ -124,8 +124,8 @@ The following figure illustrates the .NET MAUI solution file hierarchy:
 ## Documentation
 
 - [DevExpress Documentation: Migration from Xamarin.Forms to .NET MAUI](https://docs.devexpress.com/MAUI/403988/)
-- [DotNet MAUI Repository: Migrating from Xamarin.Forms (Preview)](https://github.com/dotnet/maui/wiki/Migrating-from-Xamarin.Forms-(Preview))
-- [DotNet MAUI Repository: Porting Custom Renderers to Handlers](https://github.com/dotnet/maui/wiki/Porting-Custom-Renderers-to-Handlers)
+- [DotNet MAUI Repository: Migrating from Xamarin.Forms (Preview)](https://learn.microsoft.com/en-us/dotnet/maui/migration/forms-projects?view=net-maui-7.0#create-a-new-project)
+- [DotNet MAUI Repository: Porting Custom Renderers to Handlers](https://learn.microsoft.com/en-us/dotnet/maui/migration/custom-renderers?view=net-maui-7.0)
 
 ## More Examples
 * [Stocks App](https://github.com/DevExpress-Examples/maui-stocks-mini)
