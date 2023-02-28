@@ -124,7 +124,7 @@ The following figure illustrates the .NET MAUI solution file hierarchy:
 ## Documentation
 
 - [DevExpress Documentation: Migration from Xamarin.Forms to .NET MAUI](https://docs.devexpress.com/MAUI/403988/)
-- [DotNet MAUI Repository: Migrating from Xamarin.Forms (Preview)](https://learn.microsoft.com/en-us/dotnet/maui/migration/forms-projects?view=net-maui-7.0#create-a-new-project)
+- [DotNet MAUI Repository: Migrating from Xamarin.Forms](https://learn.microsoft.com/en-us/dotnet/maui/migration/forms-projects?view=net-maui-7.0)
 - [DotNet MAUI Repository: Porting Custom Renderers to Handlers](https://learn.microsoft.com/en-us/dotnet/maui/migration/custom-renderers?view=net-maui-7.0)
 
 ## More Examples
