@@ -141,7 +141,7 @@ The following figure illustrates the .NET MAUI solution file hierarchy:
 * [Collection View](https://github.com/DevExpress-Examples/maui-collection-view-get-started)
 * [Popup](https://github.com/DevExpress-Examples/maui-popup-get-started)
 <!-- feedback -->
-## Does this example address your development requirements/objectives?
+## Does This Example Address Your Development Requirements/Objectives?
 
 [<img src="https://www.devexpress.com/support/examples/i/yes-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=maui-migrate-grid-control-from-xamarin-forms&~~~was_helpful=yes) [<img src="https://www.devexpress.com/support/examples/i/no-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=maui-migrate-grid-control-from-xamarin-forms&~~~was_helpful=no)
 
