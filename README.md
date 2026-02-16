@@ -10,7 +10,7 @@ This repository illustrates how to migrate the [DevExpress Xamarin.Forms DataGri
 
 Refer to the project's [22.2.3-maui+](https://github.com/DevExpress-Examples/maui-migrate-grid-control-from-xamarin-forms/tree/22.2.3-maui+) branch to see the steps that your should perform to migrate this project to the [DevExpress .NET MAUI](https://devexpress.com/maui).
 <!-- feedback -->
-## Does this example address your development requirements/objectives?
+## Does This Example Address Your Development Requirements/Objectives?
 
 [<img src="https://www.devexpress.com/support/examples/i/yes-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=maui-migrate-grid-control-from-xamarin-forms&~~~was_helpful=yes) [<img src="https://www.devexpress.com/support/examples/i/no-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=maui-migrate-grid-control-from-xamarin-forms&~~~was_helpful=no)
 
